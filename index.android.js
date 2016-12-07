@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 var _mysql = require('mysql');
 
-var HOST = 'ip-172-31-51-183';
+var HOST = 'ip-52.91.107.127';
 var PORT = 3306;
 var MYSQL_USER = 'ldunphy';
 var MYSQL_PASS = 'umd2010';
