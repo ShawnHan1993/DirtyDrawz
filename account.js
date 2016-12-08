@@ -45,7 +45,7 @@ class MenuButton extends Component {
 module.exports = class account extends Component {
   constructor(props){
     super(props);
-var mysql = require("mysql");var con = mysql.createConnection({  host: "52.91.107.127",  user: "root",  password: "Sharon1994928",  database: "EC601"});con.connect(function(err){  if(err){    console.log('Error connecting to Db');    return;  }  console.log('Connection established');});
+var mysql = require("mysql");var con = mysql.createConnection({  host: "52.91.107.127",  user: "root",  password: "Sharon1994928",  database: "EC601"});con.connect(function(err){  });
     const ds = new ListView.DataSource({rowHasChanged:(r1,r2)=>r1 !==r2})
     this.state={
       dataSource:ds.cloneWithRows([
@@ -58,7 +58,7 @@ var mysql = require("mysql");var con = mysql.createConnection({  host: "52.91.
       info_first_name:'Shawn',
       info_last_name:'Han',
       info_Email:'shawnhan1029@gmail.com',
-      info_phone:'con.query('SELECT phone from users where customerID=1',function(err,rows){  if(err) throw err;  console.log('Data received from Db:\n');  console.log(rows);});',
+      info_phone:con.query('SELECT phone from users where customerID=1',function(err,rows){   console.log(rows);});,
       info_billing_address:'508 cambridge street',
       info_zip:'02134'
 con.end(function(err) {});
